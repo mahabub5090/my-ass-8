@@ -1,0 +1,54 @@
+[ {
+        "id": "1",
+        "name": "Yoga",
+        "age": "20-50",
+        "time": 20,
+        "description": "Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation. Yoga is an ancient practice that may have originated in India. It involves movement, meditation, and breathing techniques to promote mental and physical well-being.",
+        "img": "https://cdn5.vectorstock.com/i/1000x1000/44/79/set-woman-in-different-yoga-poses-names-vector-29954479.jpg"
+
+    },
+    {
+        "id": "2",
+        "name": "Cradio",
+        "age": "20-50",
+        "time": "30",
+        "description": "Cardio is defined as any type of exercise that gets your heart rate up and keeps it up for a prolonged period of time. Your respiratory system will start working harder as you begin to breathe faster and more deeply.",
+        "img": "https://www.gbpersonaltraining.com/wp-content/uploads/2018/09/17_fast_mountain_climbers.png"
+
+    },
+    {
+        "id": "3",
+        "name": "Warm-Up",
+        "age": "20-50",
+        "time": 20,
+        "description": "A warmup gradually revs up your cardiovascular system by raising your body temperature and increasing blood flow to your muscles. Warming up may also help reduce muscle soreness and lessen your risk of injury. Cooling down after your workout allows for a gradual recovery of preexercise heart rate and blood pressure.",
+        "img": "https://stylesatlife.com/wp-content/uploads/2018/05/Warm-Up-Exercises-for-Beginners-Our-Top-25.jpg"
+
+    },
+    {
+        "id": "4",
+        "name": "Running",
+        "age": "20-50",
+        "time": 50,
+        "description": "What is running and its importance, Running or jogging is one of the best cardio exercises you can do. Running for at least 10 minutes a day can significantly lower your risk of cardiovascular disease. Runners lower their chances of dying from heart disease by half.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Training_of_Seattle_Mist_Lingerie_Football_0154.jpg"
+
+    },
+    {
+        "id": "5",
+        "name": "Dynamic Stretching ",
+        "age": "20-50",
+        "time": 20,
+        "description": "Dynamic stretching is a movement-based type of stretching. It uses the muscles themselves to bring about a stretch. It's different from traditional  stretching because the stretch position is not held.",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rw-prerunwarmup-jess-side-lunge-1-1587750245.jpg?crop=1.00xw:0.754xh;0,0.249xh&resize=1200:*"
+
+    },
+    {
+        "id": "6",
+        "name": "Static-Stretching",
+        "age": "20-50",
+        "time": 30,
+        "description": "Static stretches are those in which you stand, sit or lie still and hold a single position for period of time, up to about 45 seconds. Dynamic stretches are controlled movements that prepare your muscles, ligaments and other soft tissues for performance and safety.",
+        "img": "https://blogscdn.thehut.net/wp-content/uploads/sites/478/2015/12/28021652/abbyb.jpg"
+
+    } ]
