@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Items from '../Items/Items';
 import './Main.css';
-import Item from '../Items'
+
 
 
 const Main = () =>
@@ -21,7 +22,7 @@ const Main = () =>
                 <h1>Select Your Today's Exercise</h1>
                 <div className="cards">
                     {
-                        items.map( item => <Item key={ item.id }item={ item }></Item> )
+                        items.map( item => <Items key={ item.id } item={ item }></Items> )
                     }
                 </div>
             </div>
