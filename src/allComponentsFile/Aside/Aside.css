@@ -1,1 +1,32 @@
-r
+.aside{
+    margin-right: 10px;
+}
+
+.author-details{
+    box-shadow: 1px 1px 5px gray;
+   
+}
+.author-information{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.ex-details{
+    display: flex;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    justify-content: space-between;
+}
+.completed-btn{
+    color: white;
+        background-color: blue;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        position: relative;
+        bottom: 0px;
+}
+
+.completed-btn:hover {
+    background-color: red;
+}
