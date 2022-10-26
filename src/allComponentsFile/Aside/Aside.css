@@ -30,3 +30,9 @@
 .completed-btn:hover {
     background-color: red;
 }
+
+.break-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}

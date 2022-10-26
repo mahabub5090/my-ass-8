@@ -1,8 +1,28 @@
 import React from 'react';
 import "./Aside.css";
+import { useState } from 'react';
+import TimeToTakeBreak from '../TimeToTakeBreak/TimeToTakeBreak';
 
-const Aside = () =>
+const Aside = (  ) =>
 {
+    const timeForBreak = [ 20, 30, 10, 40, 50 ]
+    const [ useTime, setTime ] = useState( [] );
+
+    const breakHandle = ( breakTime ) =>
+    {
+        localStorage.setItem( "breakTime", JSON.stringify( breakTime ) )
+        setTime( breakTime );
+    }
+
+    let useBreakTime = '';
+    const getTakeBreakTime = localStorage.getItem( 'breakTime' )
+    if ( getTakeBreakTime )
+    {
+    
+        useBreakTime = ( JSON.parse( getTakeBreakTime ) );
+    }
+
+
     return (
         <div className='aside'>
             <div className='author-details'>
@@ -26,27 +46,37 @@ const Aside = () =>
                 </div>
             </div>
 
-            <div className=''></div>
-
-           
-                <div className='exercise-management'>
-                    <h3>Your's Exercise Details:</h3>
-                    <div className='ex-details'>
-                        <h4>Exercise Time</h4>
-                        <h4> seconds</h4>
-                    </div>
-                    <div className='ex-details'>
-                        <h4>Break Time</h4>
-                        <h4> seconds</h4>
-                    </div>
-                    <button className="completed-btn">Activity Completed</button>
-
+            <div className=''>
+                <h3>Please Add a Break Time</h3>
+                <div className='break-part'>
+                    {
+                        timeForBreak.map( breakTime => <TimeToTakeBreak breakTime={ breakTime } breakHandle={ breakHandle }></TimeToTakeBreak> )
+                    }
                 </div>
-            
+            </div>
+
+
+            <div className='exercise-management'>
+                <h3>Your's Exercise Details:</h3>
+                <div className='ex-details'>
+                    <h4>Exercise Time</h4>
+                    <h4> seconds</h4>
+                </div>
+                <div className='ex-details'>
+                    <h4>Break Time</h4>
+                    <h4> { useBreakTime + 0 }seconds</h4>
+                    {/* we use "useTime" (in 'p' tag) and display none it for error handleing,bcz we declare a useState but we don't use "useTime" anywhere */}
+                    <p style={{ display: "none" }}>{ useTime}</p>
+                </div>
+                <button className="completed-btn">Activity Completed</button>
+
+            </div>
+
 
         </div>
 
     );
 };
+
 
 export default Aside;

@@ -1,0 +1,11 @@
+.break-btn button {
+    text-decoration: none;
+    border: 1px solid green;
+    background-color: white;
+    border-radius: 20px;
+    color: blue;
+}
+
+.break-btn button:hover {
+    background-color: red;
+}
