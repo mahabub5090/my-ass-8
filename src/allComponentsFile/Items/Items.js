@@ -1,13 +1,13 @@
 import React from 'react';
 import './Item.css';
 
-const Items = ( { item } ) =>
+const Items = ( { item, handleCliked } ) =>
 {
     const { name, age, time, description, img } = item;
     return (
 
         <div className='card'>
-            <div className="card-body">
+            <div className="card-body"> 
                 <img src={ img } className="card-img" alt="" />
                 <div className='card-details'>
                     <h3>{ name }</h3>
@@ -16,7 +16,7 @@ const Items = ( { item } ) =>
                     <p><strong>Time Needed: { time }s</strong></p>
                 </div>
             </div>
-            <button className="card-btn">Add To List</button>
+            <button className="card-btn" onClick={ () => handleCliked( item ) }>Add To List</button>
         </div>
     );
 };

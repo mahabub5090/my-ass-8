@@ -17,19 +17,28 @@ const Main = () =>
             .then( data => setItems( data ) )
     }, [] )
 
+    const [ exTime, setExTime ] = useState( [] );
+    const handleCliked = ( item ) =>
+    {
+        let exerciseTime = 0;
+        exerciseTime = item.time;
+        setExTime( exerciseTime )
+        
+    };
+
     return (
         <div className='main-part'>
             <div className='items'>
                 <h1>Select Your Today's Exercise</h1>
                 <div className="cards">
                     {
-                        items.map( item => <Items key={ item.id } item={ item }></Items> )
+                        items.map( item => <Items key={ item.id } item={ item } handleCliked={handleCliked}></Items> )
                     }
                 </div>
             </div>
             {/*  */ }
             <div className='aside'>
-                <Aside></Aside>
+                <Aside exerciseTime={exTime}></Aside>
             </div>
         </div>
     );

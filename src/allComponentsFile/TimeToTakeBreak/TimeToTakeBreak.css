@@ -4,6 +4,7 @@
     background-color: white;
     border-radius: 20px;
     color: blue;
+    padding: 10px 3px;
 }
 
 .break-btn button:hover {
