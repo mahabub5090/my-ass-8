@@ -12,7 +12,7 @@ const Header = () =>
             </div>
             <div className='navbar-menu'>
                 <a href='/#'>Home</a>
-                <a href='/blogs'>Blogs</a>
+                <a href="./../../App.js/blogs">Blogs</a>
             </div>
         </nav>
     );

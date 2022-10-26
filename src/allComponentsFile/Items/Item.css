@@ -1,0 +1,26 @@
+.card-img {
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    border: 2px solid gray;
+    background-color: aliceblue;
+    margin: 10px;
+
+}
+
+.card-btn {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+.card-btn:hover {
+    background-color: red;
+}

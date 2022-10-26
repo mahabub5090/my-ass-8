@@ -1,0 +1,34 @@
+.main-part {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+.cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+        .main-part {
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 20px;
+        }
+}}

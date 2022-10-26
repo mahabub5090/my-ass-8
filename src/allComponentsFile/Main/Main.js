@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Items from '../Items/Items';
 import './Main.css';
+import Aside from './../Aside/Aside';
 
 
 
@@ -17,7 +18,7 @@ const Main = () =>
     }, [] )
 
     return (
-        <div>
+        <div className='main-part'>
             <div className='items'>
                 <h1>Select Your Today's Exercise</h1>
                 <div className="cards">
@@ -28,7 +29,7 @@ const Main = () =>
             </div>
             {/*  */ }
             <div className='aside'>
-
+                <Aside></Aside>
             </div>
         </div>
     );
