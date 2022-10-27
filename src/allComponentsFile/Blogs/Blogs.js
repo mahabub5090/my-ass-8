@@ -1,5 +1,6 @@
 import React from 'react';
 import Question from '../Question/Question';
+import "./Blog.css";
 
 
 const Blogs = () =>
@@ -13,11 +14,11 @@ const Blogs = () =>
     const answer3 = "The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are:  directly updating the DOM, and timers.";
 
     return (
-        <div>
-            <Question question={question1} answer ={ answer1}></Question>
-            <Question question={question2} answer ={ answer2}></Question>
-            <Question question={question3} answer ={ answer3}></Question>
-            
+        <div className='blogs'>
+            <div className='blog'><Question question={ question1 } answer={ answer1 }></Question></div>
+            <div className='blog'><Question question={ question2 } answer={ answer2 }></Question></div>
+            <div className='blog'><Question question={ question3 } answer={ answer3 }></Question></div >
+
         </div>
     );
 };

@@ -20,15 +20,15 @@
     display: flex;
 }
 
-.navbar-menu a{
+.navbar-menu p{
     color: aliceblue;
-    text-decoration: none;
+    
     font-size: 24px;
     margin-left: 5px;
     padding: 0 10px;  
     border: 3px solid chocolate;
 }
-.navbar-menu a:hover{
+.navbar-menu p:hover{
 color: chocolate;
 border: 3px solid aliceblue;
 }

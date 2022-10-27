@@ -1,9 +1,17 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Header = () =>
 {
+ 
+        const goesToBlogs = () => toast( "Please Scroll Down For Read The Blogs." );
+        < ToastContainer />;
+    
     return (
         <nav className='navbar'>
             <div className='nav-main'>
@@ -11,11 +19,13 @@ const Header = () =>
                 <h1><span className='gym'>GYM</span> Club</h1>
             </div>
             <div className='navbar-menu'>
-                <a href='/#'>Home</a>
-                <a href="./../../App.js/blogs">Blogs</a>
+                <p href='/'>Home</p>
+                <p href='/' onClick={ goesToBlogs } >Blogs</p>
             </div>
         </nav>
     );
 };
+
+
 
 export default Header;
