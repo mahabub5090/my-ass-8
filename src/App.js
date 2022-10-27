@@ -2,6 +2,7 @@ import './App.css';
 import Header from './allComponentsFile/Header/Header';
 import Blogs from './allComponentsFile/Blogs/Blogs';
 import Main from './allComponentsFile/Main/Main';
+import FooterComponent from './allComponentsFile/FooterComponent/FooterComponent';
   
 function App ()
 {
@@ -12,6 +13,8 @@ function App ()
       <footer>
         <hr></hr>
         <Blogs className="blogs"></Blogs>
+        <hr></hr>
+        <FooterComponent></FooterComponent>
       </footer>
     </div>
   );
