@@ -1,15 +1,21 @@
 import React from 'react';
 import "./Aside.css";
-import {ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import TimeToTakeBreak from '../TimeToTakeBreak/TimeToTakeBreak';
 
-const Aside = (  ) =>
-{
-   
-   
-    const timeForBreak = [ 20, 30, 10, 40, 50 ]
+const Aside = ( { exArray } ) =>{
+
+    let time = 0;
+    for ( const item of exArray )
+    {
+        time = time + parseInt( item.time );
+        
+    }
+
+
+    const timeForBreak = [ 20, 30, 10, 40, 50, 35 ]
     const [ noUseTime, setTime ] = useState( [] );
 
     const breakHandle = ( breakTime ) =>
@@ -25,9 +31,9 @@ const Aside = (  ) =>
         useBreakTime = ( JSON.parse( getTakeBreakTime ) );
     }
 
-    
+
     const complitedWork = () => toast( "Well Done!!! You Are Completed The Excercise." );
-    
+
     return (
         <div className='aside'>
             <div className='author-details'>
@@ -65,16 +71,16 @@ const Aside = (  ) =>
                 <h3>Your's Exercise Details:</h3>
                 <div className='ex-details'>
                     <h4>Exercise Time</h4>
-                    <h4>{time+0} seconds</h4>
+                    <h4>{ time + 0 } seconds</h4>
                 </div>
                 <div className='ex-details'>
                     <h4>Break Time</h4>
                     <h4> { useBreakTime + 0 }seconds</h4>
-                    {/* we use "useTime" (in 'p' tag) and display none it for error handleing,bcz we declare a useState but we don't use "useTime" anywhere */}
-                    <p style={{ display: "none" }}>{ noUseTime}</p>
+                    {/* we use "useTime" (in 'p' tag) and display none it for error handleing,bcz we declare a useState but we don't use "useTime" anywhere */ }
+                    <p style={ { display: "none" } }>{ noUseTime }</p>
                 </div>
-                <button className="completed-btn" onClick={complitedWork}>Activity Completed</button>
-                <ToastContainer/>
+                <button className="completed-btn" onClick={ complitedWork }>Activity Completed</button>
+                <ToastContainer />
             </div>
 
 

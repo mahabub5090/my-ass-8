@@ -1,6 +1,7 @@
 import React from 'react';
 import './Item.css';
 
+
 const Items = ( { item, handleCliked } ) =>
 {
     const { name, age, time, description, img } = item;
@@ -16,7 +17,7 @@ const Items = ( { item, handleCliked } ) =>
                     <p><strong>Time Needed: { time }s</strong></p>
                 </div>
             </div>
-            <button className="card-btn" onClick={ () => handleCliked( item ) }>Add To List</button>
+            <button className="card-btn" onClick={ () => handleCliked(item) }>Add To List</button>
         </div>
     );
 };

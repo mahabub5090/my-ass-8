@@ -17,15 +17,15 @@ const Main = () =>
             .then( data => setItems( data ) )
     }, [] )
 
-    const [ exTime, setExTime ] = useState( [] );
+    const [ exArray, setExArray ] = useState([]);
     const handleCliked = ( item ) =>
     {
-        let exerciseTime = 0;
-        exerciseTime = item.time;
-        setExTime( exerciseTime )
-        
+        const newExArray = [...exArray,item];
+        setExArray( newExArray )
+       
     };
-
+   
+// console.log(exArray)
     return (
         <div className='main-part'>
             <div className='items'>
@@ -38,7 +38,8 @@ const Main = () =>
             </div>
             {/*  */ }
             <div className='aside'>
-                <Aside exerciseTime={exTime}></Aside>
+                <Aside exArray={exArray}></Aside>
+               
             </div>
         </div>
     );
